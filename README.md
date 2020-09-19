@@ -12,7 +12,7 @@ pip install -r requirements.txt
  ```
  
 ## Get data
- Get some data to put in the database (you can download multiple files id desired):  
+ Get some data to put in the database (you can download multiple files if desired):  
  ```
  wget ftp://ftp.ais.dk/ais_data/aisdk_20181101.csv
  ```
