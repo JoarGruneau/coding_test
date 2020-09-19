@@ -19,7 +19,7 @@ def get_keys(col):
         }
     }])
     for res in result:
-        return res['allkeys']
+        return filter(lambda x: x != '_id', res['allkeys'])
     return []
 
 
