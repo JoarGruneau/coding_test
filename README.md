@@ -117,3 +117,13 @@ pip install -r requirements.txt
   
   I, therefore, choose a document structure database and created sparse indexes only for existing fields.
   The ETL pipeline used pandas because of the ease in which you can load csv files, replace different types of undefined values, and then convert it to a filtered dict.
+  
+  ## Areas of improvement
+  1. There is currently no check for uniqueness when inserting the data, so it is now possible to insert the same data multiple times. An easy way to solve this would be to create a unique composite index for timestamp + ship_id.
+  
+  2. Location is now stored as floats, MongoDb supports the GEO JSON format which allows you to preform location querries easily, and update would be to add location on this format instead.
+  
+  3. Timestamp field is unclear, a much better way would be to define the timestamp as a Unix timestamp in milliseconds. This would solve the problem of uncertainty when dealing with dates and not defined timezones.
+  
+  4. No parallelism for the ETL or report generation
+  
