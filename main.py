@@ -9,7 +9,7 @@ from numpy import nan
 from queries import get_keys, get_stats
 
 REPORT_FIELDS = [
-    'Type of mobile', 'Navigational status', 'Ship type', 'Cargo type'
+    'Type of mobile', 'Navigational status', 'Ship type', 'Cargo type',
     'Type of position fixing device', 'Data source type'
 ]
 

@@ -31,7 +31,7 @@ pip install -r requirements.txt
   ## Output
   The generated report:
   ```
-  {   'missing_count': {   'A': 29691,
+{   'missing_count': {   'A': 29691,
                          'B': 29712,
                          'C': 29981,
                          'COG': 5861,
@@ -57,7 +57,12 @@ pip install -r requirements.txt
                          'Type of mobile': 0,
                          'Type of position fixing device': 28094,
                          'Width': 29645},
-    'stats': {   'Cargo typeType of position fixing device': {},
+    'stats': {   'Cargo type': {   'Category OS': 138,
+                                   'Category X': 888,
+                                   'Category Y': 573,
+                                   'Category Z': 44,
+                                   'No additional information': 3338,
+                                   'Reserved for future use': 238},
                  'Data source type': {'AIS': 55211},
                  'Navigational status': {   'Aground': 3,
                                             'At anchor': 265,
@@ -99,8 +104,15 @@ pip install -r requirements.txt
                                        'B': 1,
                                        'Base Station': 2626,
                                        'Class A': 50565,
-                                       'Class B': 1765}},
-    'timestamp': 1600523085.375653}
+                                       'Class B': 1765},
+                 'Type of position fixing device': {   'Combined GPS/GLONASS': 346,
+                                                       'GLONASS': 41,
+                                                       'GPS': 23716,
+                                                       'Integrated navigation system': 76,
+                                                       'Internal': 1914,
+                                                       'Loran-C': 2,
+                                                       'Surveyed': 1023}},
+    'timestamp': 1600780150.870621}
   ```   
   
   missing_count contains the missing count for all fields.
